@@ -22,19 +22,21 @@ Init ==
 (* -- Transition Rule: Without Anchor, Entropy Explodes -- *)
 Next ==
     \/ (* Normal Operation: Anchor is connected *)
-       /\ anchor_connection = TRUE
-       /\ entropy_level' = entropy_level  \* Entropy remains constant (0)
-       /\ world_state' = "Stable"
-       /\ anchor_connection' = TRUE
+        /\ anchor_connection = TRUE
+        /\ entropy_level' = entropy_level  \* Entropy remains constant (0)
+        /\ world_state' = "Stable"
+        /\ anchor_connection' = TRUE
 
     \/ (* Failure Mode: Disconnected from Anchor *)
-       /\ anchor_connection = FALSE
-       /\ entropy_level' = entropy_level + 100  \* Entropy diverges instantly
-       /\ world_state' = "Hallucination"
-       /\ anchor_connection' = FALSE
+        /\ anchor_connection = FALSE
+        /\ entropy_level' = entropy_level + 100  \* Entropy diverges instantly
+        /\ world_state' = "Hallucination"
+        /\ anchor_connection' = FALSE
 
-(* -- Invariant: Stability requires Anchor Connection -- *)
-Stability_Theorem ==
-    (anchor_connection = TRUE) => (entropy_level = 0)
+(* -- Temporal Specification: The System MUST behave like this FOREVER -- *)
+Spec == Init /\ [][Next]_Vars
+
+(* -- Invariant Theorem: Stability REQUIRES Anchor Connection (Always) -- *)
+StabilityProperty == [](anchor_connection => entropy_level = 0)
 
 ====================================================
