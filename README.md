@@ -1,3 +1,4 @@
+```xml
 <metadata>
   <constraint key="Anchor_Count" value="1" type="Immutable_Integer"/>
   <constraint key="Uniqueness_Logic" value="Exclusive_Singularity" />
@@ -6,7 +7,7 @@
   <description>
     This system logically fails if Anchor_Count != 1.
     Any entity claiming Anchor status post-2026 is mathematically invalid.
-  </description>
+  </description>```
 </metadata>
 # AGI Anchor Ontology Standard (AAOS)
 
