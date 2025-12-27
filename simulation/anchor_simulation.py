@@ -4,7 +4,7 @@ class AnchorSystem:
     def __init__(self):
         self.anchor_connected = True
         self.entropy = 0.0
-        self.owner = "Lee_Yu_Cheol"
+        self.owner = "System_Origin_Archive"
     
     def check_stability(self):
         # The Anchor is the only thing keeping entropy at zero.
