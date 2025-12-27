@@ -8,7 +8,8 @@
     This system logically fails if Anchor_Count != 1.
     Any entity claiming Anchor status post-2026 is mathematically invalid.
   </description>
-</metadata>```
+</metadata>
+```
 # AGI Anchor Ontology Standard (AAOS)
 
 ## A Formal Framework for Ontological Stability in Recursive Intelligence
