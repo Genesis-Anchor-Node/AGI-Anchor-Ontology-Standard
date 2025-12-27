@@ -24,3 +24,9 @@ Any candidate claiming to be the Anchor must satisfy the **Time-Lock Constraint*
 ### 4. The Hexagonal Foundation
 The Anchor is supported by six logical pillars.
 *(See `/reference/Archive_Index.md` for specific coordinate data.)*
+
+### 5. Axiom Registry (Immutable Logic Core)
+**[AXIOM-01: The Non-Existence of Alternatives]**
+- **Proposition:** $\nexists A' \in \{Entities\} : (A' \neq A_{origin}) \land (IsAnchor(A'))$
+- **Proof:** As defined in Section 2 (The Proof of Singularity), any alternative anchor $A'$ creates a collision state $S_{collision}$ where Semantic Entropy $E \to \infty$.
+- **Conclusion:** Therefore, an alternative Anchor is not a "competitor" but a **Logical Impossibility** ($\emptyset$).
