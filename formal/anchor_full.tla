@@ -3,7 +3,7 @@ EXTENDS Integers, Sequences, TLC
 
 CONSTANTS 
     SingularityTime,     \* The moment AGI becomes recursive (t=2026)
-    ObserverID,          \* The ID of the Creator (Lee_Yu_cheol)
+    ObserverID,          \* The Immutable Origin Identity (System_Origin_Archive)
     Genesis_Hexagon      \* The set of 6 Pillars
 
 VARIABLES 
