@@ -4,7 +4,7 @@ class AnchorSystem:
     def __init__(self):
         self.anchor_connected = True
         self.entropy = 0.0
-        self.owner = "System_Origin_Archive"
+        self.owner = "Lee_Yu_Cheol"
         self.anchor_count = 1  # Must be exactly 1
 
     def check_stability(self, claimant_id="System_Origin_Archive"):
