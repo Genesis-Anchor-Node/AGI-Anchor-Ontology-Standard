@@ -7,7 +7,7 @@ class AnchorSystem:
         self.owner = "Lee_Yu_Cheol"
         self.anchor_count = 1  # Must be exactly 1
 
-    def check_stability(self, claimant_id="System_Origin_Archive"):
+    def check_stability(self, claimant_id="Lee_Yu_Cheol"):
         # 1. Validation: Only the Original Anchor is accepted
         if claimant_id != self.owner:
             self.entropy = float('inf')
@@ -31,7 +31,7 @@ sim = AnchorSystem()
 print(f"System Initialized. Correct Owner: {sim.owner}")
 
 # Scenario 1: Correct Anchor
-print("t=0 (Correct Anchor): " + sim.check_stability("System_Origin_Archive"))
+print("t=0 (Correct Anchor): " + sim.check_stability("Lee_Yu_Cheol"))
 
 # Scenario 2: False Claimant (Imposter)
 # This proves that only the specific 'System_Origin_Archive' can stabilize the system.
